@@ -1,6 +1,8 @@
 body {
   font-size: .875rem;
   background-color: #ffffff;
+  font-family:'Josefin Sans', serif;
+  height: 50%;
 }
 
 .feather {
@@ -108,17 +110,12 @@ body {
   color: rgb(91,192,222);
   background-color: white;
   
-  /* font-family: 'Josefin Sans', sans-serif; 
-*/
+
 }
 .dedo{
 color: black;
 }
 
-@font-face{
-  font-family: 'Josefin Sans';
-  src: url('fonts/fontJosefinSans-Light.otf');
-}
 
 .bbb{
   text-align: center;
@@ -139,7 +136,7 @@ color: #333;
 }
 
 .jos{
-font-family:'Josefin Sans';
+
 
 }
 
@@ -150,4 +147,37 @@ background-color: rgb(100, 98, 98);
 
 .dourado{
 color: rgb(247, 174, 40)
+}
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.but{
+background-image: url(music/ind3.jpg);
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.welcome{
+   text-align: center; 
+   font-size: 48pt;
+   
+}
+
+.resp{
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.but2{
+  background-image: url(music/ind4.jpg);
+  width: 100%;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
