@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2">
+  <h1 class="h2">Identificação Contato</h1>
+  <div class="btn-toolbar mb-2 mb-md-0">
+
+    <a ui-sref="clientesNovo" class="btn btn-sm btn-outline-success">
+      <span class="fa fa-plus"></span>
+      Nova ID
+    </a>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>E-mail</th>
+        <th>Endereço</th>
+        <th>Complemento</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in vm.clientes">
+        <td>{{item.nome}}</td>
+        <td>{{item.telefone}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.endereco}}</td>
+        <td>{{item.complemento}}</td>
+        <td class="text-right">
+          <a ui-sref="clientesEditar({id: item.$id})" class="btn btn-sm btn-outline-info py-0">
+            <span class="fa fa-edit"></span>
+          </a>
+          <button ng-click="vm.excluir(item)" type="button" class="btn btn-sm btn-outline-danger py-0">
+            <span class="fa fa-trash"></span>  
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

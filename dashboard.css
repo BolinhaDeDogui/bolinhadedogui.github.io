@@ -1,8 +1,5 @@
 body {
   font-size: .875rem;
-  background-color: #ffffff;
-  font-family:'Josefin Sans', serif;
-  height: 50%;
 }
 
 .feather {
@@ -19,11 +16,10 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 0;
+  left: 0;
   z-index: 100; /* Behind the navbar */
-  padding:62px 0 0; /* Height of navbar */
+  padding: 48px 0 0; /* Height of navbar */
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
-  border: 1px red;
 }
 
 .sidebar-sticky {
@@ -33,9 +29,6 @@ body {
   padding-top: .5rem;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  background: #333;
-  font-size: 12pt;
-  border: #fff;
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
@@ -47,7 +40,7 @@ body {
 
 .sidebar .nav-link {
   font-weight: 500;
-  color: rgb(150, 150, 150);
+  color: rgb(128, 128, 128);
 }
 
 .sidebar .nav-link .feather {
@@ -56,9 +49,7 @@ body {
 }
 
 .sidebar .nav-link.active {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  
+  color: #ffffff;
 }
 
 .sidebar .nav-link:hover .feather,
@@ -82,17 +73,16 @@ body {
 /*
  * Navbar
  */
+
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: 1rem;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-
 }
 
 .navbar .form-control {
-
   padding: .75rem 1rem;
   border-width: 0;
   border-radius: 0;
@@ -108,67 +98,17 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
-.bttt{
-  color: rgb(91,192,222);
-  background-color: white;
-  
-
-}
-.dedo{
-color: black;
-}
-
-
-.bbb{
-  text-align: center;
-  font-size: 15pt;
-  color: #fff;
-  font-family:'Josefin Sans', serif; 
-  
-}
-.bbbt{
-color: #333;
-}
-.bbbtt{
-  background-color: #8a8a8a;
-}
-
-.xx{
-  right: 0;
-}
-
-.jos{
-
-
-}
-
-.fim{
-color: #ffffff;
-background-color: rgb(100, 98, 98);
-}
 
 .dourado{
-color: rgb(247, 174, 40)
-}
-
-/* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans'); */
-
-.but{
-background-image: url(music/ind3.jpg);
-width: 100%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-
-}
-
-.welcome{
-   text-align: center; 
-   font-size: 48pt;
-   
-}
-
-.resp{
+  color: rgb(221, 172, 81)
+  }
+  .welcome{
+    text-align: center; 
+    font-size: 48pt;
+    
+ }
+ 
+ .resp{
   position: fixed; /* or absolute */
   top: 50%;
   left: 50%;
@@ -176,34 +116,6 @@ background-size: cover;
   transform: translate(-50%, -50%);
 }
 
-.but2{
-  background-image: url(music/ind4.jpg);
-  width: 100%;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-.leftt{
-  right: 0;
-  bottom: 0;
-  position: fixed;
-}
-
-.welcome2{
-  text-align: start; 
-  font-size: 30pt;
-
-}
-
-.kill{
-  background: #333;
-}
-
-.bl{
-background-color: white;
-}
-
-.xx{
-  text-align: center;
+body{
+  font-family:'Josefin Sans', serif;
 }

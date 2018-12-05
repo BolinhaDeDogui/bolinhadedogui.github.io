@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2">
+  <h1 class="h2">Empréstimos</h1>
+  <div class="btn-toolbar mb-2 mb-md-0">
+
+    <a ui-sref="pedidosNovo" class="btn btn-sm btn-outline-success">
+      <span class="fa fa-plus"></span>
+      Novo Empréstimo
+    </a>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>Emissão</th>
+        <th >Data de Entrega</th>
+        <th>Reservado Por</th>
+        <th>ID do Livro</th>
+        <!-- <th class="text-center">Valor Total</th> -->
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in vm.pedidos">
+        <td >{{item.emissao | date: 'dd/MM/yyyy HH:mm'}}</td>
+        <td >{{item.numero}}</td>
+        <td>{{item.cliente.nome}}</td>
+        <td>{{item.produto.codigo}}</td>
+        <!-- <td class="text-right">{{item.valorTotal}}</td> -->
+        <td class="text-right">
+          <a ui-sref="pedidosEditar({id: item.$id})" class="btn btn-sm btn-outline-info py-0">
+            <span class="fa fa-edit"></span>
+          </a>
+          <button ng-click="vm.excluir(item)" type="button" class="btn btn-sm btn-outline-danger py-0">
+            <span class="fa fa-trash"></span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
